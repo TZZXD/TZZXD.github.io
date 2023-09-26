@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "9.26 update"
+date:   2023-09-26 11:30:46 +0800
+categories: content update
+---
+
+It's for the first time that I update this website.
+
+I'll post something interesting or memorable in Japan from now on.
+
+[zz-github]: https://github.com/TZZXD
