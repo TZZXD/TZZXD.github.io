@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>reveal.js - Markdown Demo</title>
+    <link rel="stylesheet" href="../css/reveal.css" />
+    <link rel="stylesheet" href="../css/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="../lib/css/zenburn.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <img src="./1.jpg" />
+          <p>
+            <small>三浦按針 (William Adams) 🏴󠁧󠁢󠁥󠁮󠁧󠁿 </small>
+          </p>
+        </section>
+        <section>
+          <img src="./3.jpg" />
+          <p>
+            <small
+              >🇳🇱ロッテルダム ➡️ 🇨🇱マゼラン海峡 ➡️ 🇯🇵黒島(大分県／おおいたけん)
+            </small>
+          </p>
+        </section>
+        <section>
+          <section>
+            <h2 data-id="code-title">日本漂着</h2>
+            <img src="./4.jpg" />
+          </section>
+          <section>
+            <img src="./pirate.jpg" width="300" height="400" />
+            <span style="font-size: 200px; margin-left: 20px">👮‍♂️</span>
+          </section>
+          <section>
+            <img src="./ieyasu.jpg" />
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2 data-id="code-title">重用された</h2>
+            <img src="./les.jpg" width="300" height="400" />
+            <main>数学 / 幾何学 / 航海術 / 砲術</main>
+          </section>
+          <section>
+            <img src="./sen.jpg" width="300" height="400" />
+            <main>造船術</main>
+          </section>
+          <section>
+            <img src="./ito.jpg" width="300" height="200" />
+            <main>貿易</main>
+          </section>
+          <section>
+            <img src="./tatakau.jpg" width="800" height="600" />
+            <main>関ヶ原の戦い（せきがはらのたたかい）</main>
+          </section>
+          <section>
+            <img src="./oh.jpg" width="400" height="500" />
+            <main>旗本・最初の ヨーロッパ人サムライ</main>
+          </section>
+        </section>
+        <section id="fragments">
+          <main>伝えたいのは...</main>
+          <p></p>
+          <p class="fragment">1. <a href="xxx">適応力</a>を持つこと</p>
+          <p class="fragment">2. 人生に<a href="xxx">楽観的</a>に向き合う</p>
+        </section>
+        <section>
+          <main>以上です、ありがとうございました！</main>
+        </section>
+      </div>
+    </div>
+
+    <script src="../lib/js/head.min.js"></script>
+    <script src="../js/reveal.js"></script>
+    <script>
+      Reveal.initialize({
+        // 是否在右下角展示控制条
+        controls: false,
+        // 是否显示演示的进度条
+        progress: true,
+        // 是否将每个幻灯片改变加入到浏览器的历史记录中去
+        history: false,
+        // 是否启用键盘快捷键来导航
+        keyboard: true,
+        // 是否启用幻灯片的概览模式,开启后，可以使用ESC键查看幻灯片概览
+        overview: true,
+        // 是否将幻灯片垂直居中
+        center: true,
+        // 是否在触屏设备上启用触摸导航
+        touch: true,
+        // 是否循环演示
+        loop: false,
+        // 是否将演示的方向变成 RTL
+        rtl: false,
+        // 全局开启和关闭碎片
+        fragments: true,
+        // 标识演示文稿是否在嵌入模式中运行，即包含在屏幕的有限部分中的
+        embedded: false,
+        // 标识当问号键被点击的时候是否应该显示一个帮助的覆盖层
+        help: true,
+        //  两个幻灯片之间自动切换的时间间隔（毫秒），当设置成 0 的时候则禁止自动切换，该值可以被幻灯片上的 ` data-autoslide` 属性覆盖
+        autoSlide: 0,
+        // 当遇到用户输入的时候停止切换
+        autoSlideStoppable: true,
+        // 是否启用通过鼠标滚轮来导航幻灯片
+        mouseWheel: true,
+        //  是否在移动设备上隐藏地址栏
+        hideAddressBar: true,
+        // 是否在一个弹出的 iframe 中打开幻灯片中的链接
+        previewLinks: false,
+        // 切换过渡效果
+        transition: "default", // none/fade/slide/convex/concave/zoom
+        // 过渡速度
+        transitionSpeed: "default", // default/fast/slow
+        // 全屏幻灯片背景的过渡效果
+        backgroundTransition: "default", // none/fade/slide/convex/concave/zoom
+        // 除当前可见的之外的幻灯片数量
+        viewDistance: 2,
+        // 视差背景图片
+        parallaxBackgroundImage: "", // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+        // 视差背景尺寸
+        parallaxBackgroundSize: "", // CSS syntax, e.g. "2100px 900px"
+        // 移动视差背景（水平和垂直）滑动变化的数量, 例如100
+        parallaxBackgroundHorizontal: "",
+        parallaxBackgroundVertical: "",
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          {
+            src: "../lib/js/classList.js",
+            condition: function () {
+              return !document.body.classList;
+            },
+          },
+          {
+            src: "../plugin/markdown/marked.js",
+            condition: function () {
+              return !!document.querySelector("[data-markdown]");
+            },
+          },
+          {
+            src: "../plugin/markdown/markdown.js",
+            condition: function () {
+              return !!document.querySelector("[data-markdown]");
+            },
+          },
+          {
+            src: "../plugin/highlight/highlight.js",
+            async: true,
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            },
+          },
+          { src: "../plugin/notes/notes.js" },
+        ],
+      });
+    </script>
+  </body>
+</html>
